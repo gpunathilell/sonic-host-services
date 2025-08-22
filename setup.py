@@ -36,6 +36,7 @@ setup(
     scripts = [
         'scripts/caclmgrd',
         'scripts/hostcfgd',
+        'scripts/hostcfgd_monitor.py',
         'scripts/featured',
         'scripts/aaastatsd',
         'scripts/procdockerstatsd',

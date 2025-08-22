@@ -1,0 +1,14 @@
+[Unit]
+Description=Host config daemon CPU/memory monitor
+After=hostcfgd.service
+Requires=hostcfgd.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hostcfgd_monitor.py
+Restart=always
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target
